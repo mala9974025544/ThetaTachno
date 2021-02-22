@@ -7,7 +7,7 @@
 * google-services.json in app-level folder
 
 ## Features
-* Sign-in/Sign-up with Email and Password
+* Sign-in/Sign-up with FireBase Authentication - Email and Password
 * Impliment MVVM
 * Impliment Bottom tabbar
 * Use Retrofit API
