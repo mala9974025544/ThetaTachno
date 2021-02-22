@@ -10,7 +10,7 @@
 * Sign-in/Sign-up with FireBase Authentication - Email and Password
 * Impliment MVVM
 * Impliment Bottom tabbar
-* Use Retrofit API
+* Use Retrofit for API
 * Page Loading with View Model
 * Right Swipe for Edit/Delete
 * Map Screen with current static map pin
