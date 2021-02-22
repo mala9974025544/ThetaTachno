@@ -6,11 +6,11 @@ import android.text.TextUtils
 import android.util.Log
 import android.view.View
 import android.widget.Toast
-import androidx.appcompat.app.AlertDialog
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseAuth.AuthStateListener
 import com.thetatechnolabs.test.R
 import com.thetatechnolabs.test.TestApplication
+import com.thetatechnolabs.test.utils.SharedPrefrence
 import com.thetatechnolabs.test.utils.Utils
 import kotlinx.android.synthetic.main.activity_emailpassword.*
 import spencerstudios.com.bungeelib.Bungee
@@ -32,9 +32,11 @@ class LoginActivity : BaseActivity(), View.OnClickListener {
             val user = firebaseAuth.currentUser
             //SignUp
             if (user != null) {
-                redirecToMainActivity()
-            }else{
 
+                if(!user.email.isNullOrEmpty())
+                SharedPrefrence.setUserEmail(this,user.email.toString())
+
+                redirecToMainActivity()
             }
 
         }
@@ -92,17 +94,7 @@ class LoginActivity : BaseActivity(), View.OnClickListener {
         }
     }
 
-    private fun signOut() {
-        val alert = AlertDialog.Builder(this)
-        alert.setMessage(R.string.logout)
-        alert.setCancelable(false)
-        alert.setPositiveButton(android.R.string.yes) { dialogInterface, i ->
-            mAuth!!.signOut()
 
-        }
-        alert.setNegativeButton(android.R.string.no) { dialogInterface, i -> dialogInterface.dismiss() }
-        alert.show()
-    }
     private fun redirecToMainActivity() {
 
         val intent = Intent(this, MainActivity::class.java)

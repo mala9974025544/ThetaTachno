@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 	<string name="app_name">ThetaTechnolab</string>
-	<string name="title_home">Home</string>
+	<string name="title_home">Map</string>
 	<string name="title_dashboard">Dashboard</string>
-	<string name="title_notifications">Notifications</string>
+	<string name="title_notifications">User</string>
 
 	<string name="label_emailpassword">Email/Password Authentication</string>
 	<string name="loading">Loading…</string>
