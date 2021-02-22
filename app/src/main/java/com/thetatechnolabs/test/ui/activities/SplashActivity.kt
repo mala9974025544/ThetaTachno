@@ -1,12 +1,12 @@
-package com.thetatechnolabs.test
+package com.thetatechnolabs.test.ui.activities
 
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
-import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
-import com.thetatechnolabs.test.utils.Utils
+import com.thetatechnolabs.test.R
+import com.thetatechnolabs.test.TestApplication
 import kotlinx.coroutines.*
 import spencerstudios.com.bungeelib.Bungee
 import kotlin.coroutines.CoroutineContext

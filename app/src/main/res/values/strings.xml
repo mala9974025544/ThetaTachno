@@ -15,5 +15,5 @@
 	<string name="hint_email">Email</string>
 	<string name="hint_password">Password</string>
     <string name="server_error">FireBase Server Error</string>
-
+	<string name="no_internet_msg">Please check your internet connection</string>
 </resources>

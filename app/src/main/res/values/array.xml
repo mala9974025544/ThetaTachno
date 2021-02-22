@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <integer-array name="rightDrawables">
+        <item>@drawable/ic_edit_24</item>
+        <item>@drawable/ic_delete_24</item>
+    </integer-array>
+
+
+    <integer-array name="rightContactColor">
+        <item>@color/colorWhite</item>
+        <item>@color/colorWhite</item>
+    </integer-array>
+
+
+
+
+    <integer-array name="rightBgColor">
+        <item>@color/colorPrimary</item>
+        <item>@color/colorPrimaryDark</item>
+    </integer-array>
+
+    <string-array name="rightContactString">
+        <item>Edit</item>
+        <item>Delete</item>
+    </string-array>
+</resources>

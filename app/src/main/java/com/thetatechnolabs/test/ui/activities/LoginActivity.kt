@@ -1,27 +1,19 @@
-package com.thetatechnolabs.test
+package com.thetatechnolabs.test.ui.activities
 
 import android.content.Intent
-import android.graphics.Bitmap
-import android.graphics.BitmapFactory
-import android.graphics.Color
-import android.os.AsyncTask
 import android.os.Bundle
 import android.text.TextUtils
 import android.util.Log
 import android.view.View
-import android.widget.EditText
-import android.widget.ImageView
-import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
-import com.google.android.material.textfield.TextInputLayout
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseAuth.AuthStateListener
-import com.google.firebase.auth.FirebaseUser
+import com.thetatechnolabs.test.R
+import com.thetatechnolabs.test.TestApplication
 import com.thetatechnolabs.test.utils.Utils
 import kotlinx.android.synthetic.main.activity_emailpassword.*
 import spencerstudios.com.bungeelib.Bungee
-import java.net.URL
 
 class LoginActivity : BaseActivity(), View.OnClickListener {
 

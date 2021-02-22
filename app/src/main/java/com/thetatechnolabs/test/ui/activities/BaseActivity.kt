@@ -1,11 +1,9 @@
-package com.thetatechnolabs.test
+package com.thetatechnolabs.test.ui.activities
 
 import android.app.ProgressDialog
-import android.os.Bundle
-import android.os.PersistableBundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import com.google.firebase.auth.FirebaseAuth
+import com.thetatechnolabs.test.R
 
 open class BaseActivity : AppCompatActivity() {
 

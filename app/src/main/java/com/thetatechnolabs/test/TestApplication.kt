@@ -13,11 +13,16 @@ class TestApplication : Application() {
     override fun onCreate() {
         Log.d("Tag","Application")
         mAuth = FirebaseAuth.getInstance()
+        instance = this
         super.onCreate()
 
     }
     fun getFirebaseAuth(): FirebaseAuth? {
         return mAuth
     }
+    companion object {
+        var instance: TestApplication? = null
+            private set
 
+}
 }

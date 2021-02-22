@@ -1,4 +1,4 @@
-package com.thetatechnolab.test.ui.notifications
+package com.thetatechnolabs.test.ui.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -11,17 +11,16 @@ import androidx.lifecycle.ViewModelProvider
 
 import com.thetatechnolabs.test.R
 
-class NotificationsFragment : Fragment() {
+class UserFragment : Fragment() {
 
-    private lateinit var notificationsViewModel: NotificationsViewModel
+
 
     override fun onCreateView(
             inflater: LayoutInflater,
             container: ViewGroup?,
             savedInstanceState: Bundle?
     ): View? {
-        notificationsViewModel =
-                ViewModelProvider(this).get(NotificationsViewModel::class.java)
+
         val root = inflater.inflate(R.layout.fragment_notifications, container, false)
 
         return root

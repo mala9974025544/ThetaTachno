@@ -16,7 +16,10 @@ import android.view.inputmethod.InputMethodManager
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
+import com.google.gson.Gson
+import com.google.gson.reflect.TypeToken
 import com.thetatechnolabs.test.R
+import okhttp3.ResponseBody
 
 
 object Utils {
@@ -27,6 +30,7 @@ object Utils {
         val activeNetworkInfo = connectivityManager.activeNetworkInfo
         return activeNetworkInfo != null && activeNetworkInfo.isConnected
     }
+
     fun showToast(context: Context?, mesaage: String, time: Int) {
         if (context != null) {
             val inflater: LayoutInflater = (context as Activity).layoutInflater

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.alexandrius.accordionswipelayout.library.SwipeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipe_layout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/size_60dp"
+    app:iconSize="@dimen/size_24dp"
+    app:foregroundLayout="@layout/item_layout"
+    app:textTopMargin="0dp"
+    app:rightItemColors="@array/rightBgColor"
+    app:rightItemIcons="@array/rightDrawables"
+    app:rightStrings="@array/rightContactString"
+    app:rightTextColors="@array/rightContactColor"
+    app:swipeItemWidth="@dimen/size_70dp"
+    app:separatorWidth="@dimen/size_1dp"
+    app:separatorColor="@color/colorWhite"
+    app:textSize="@dimen/text_12sp"
+    />
+
