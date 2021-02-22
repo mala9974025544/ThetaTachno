@@ -15,7 +15,7 @@ class MainViewModelWithPaging() : ViewModel() {
         val itemDataSourceFactory = UserDataSource.UserDataSourceFactory()
         liveDataSource = itemDataSourceFactory.userLiveDataSource
         val config = PagedList.Config.Builder()
-            .setEnablePlaceholders(false)
+            .setEnablePlaceholders(true)
             .setPageSize(UserDataSource.PAGE_SIZE)
             .build()
         userPagedList = LivePagedListBuilder(itemDataSourceFactory, config)

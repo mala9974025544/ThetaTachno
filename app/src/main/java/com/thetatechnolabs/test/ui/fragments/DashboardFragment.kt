@@ -12,12 +12,12 @@ import androidx.recyclerview.widget.DividerItemDecoration
 import com.thetatechnolabs.test.R
 import com.thetatechnolabs.test.ui.adapters.MainAdapterWIthPageList
 import com.thetatechnolabs.test.viewModels.MainViewModelWithPaging
-import kotlinx.android.synthetic.main.fragment_home.*
+import kotlinx.android.synthetic.main.fragment_dashboard.*
 
 class DashboardFragment : Fragment() {
 
    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-       return inflater.inflate(R.layout.fragment_home, container, false)
+       return inflater.inflate(R.layout.fragment_dashboard, container, false)
 
     }
 
