@@ -1,4 +1,4 @@
-# Theta Technlabs
+# Theta Technolabs
 
 
 ## Prerequisites
